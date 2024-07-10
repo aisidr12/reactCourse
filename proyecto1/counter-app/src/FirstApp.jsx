@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 /*
 
 function App(){
@@ -14,6 +15,10 @@ se tiene que poner {}
 export const FirstApp = () =>{
 
     return (
+        <Fragment>
         <h1>Hola mundo esta es mi first app</h1>
+        <p>Anadiendo otra linea para usar Fragmentos</p>
+        <p>Otra forma de usar fragmento es con los mayor o menor</p>
+        </Fragment>
     );
 }
