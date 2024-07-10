@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 /*
 
 function App(){
@@ -11,14 +10,19 @@ fichero destino no se pone {}, pero si no tiene default
 se tiene que poner {}
 
 */
+const saludo= ()=>{
+    return <h1>imprimiendo desde un metodo </h1>;
+}
+//Es importante que el metodo saludo y los demas metodos esten fuera porque
+// a la hora de renderizar este se llamara una unica vez y no dos veces
+// en el caso de que este dentro del componente.
 
 export const FirstApp = () =>{
 
     return (
-        <Fragment>
-        <h1>Hola mundo esta es mi first app</h1>
-        <p>Anadiendo otra linea para usar Fragmentos</p>
-        <p>Otra forma de usar fragmento es con los mayor o menor</p>
-        </Fragment>
+        <>hola
+            {saludo()}
+            <h1>Soy subtitulo</h1>
+        </>
     );
 }
