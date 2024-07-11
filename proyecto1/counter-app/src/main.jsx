@@ -4,5 +4,5 @@ import { FirstApp }  from './FirstApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
-    <FirstApp elemento="arturo" elemento2="Isidro" />
+    <FirstApp title="Dragon Ball Z" author="Akira Toriyama" anio = {1990} />
 </React.StrictMode>);
