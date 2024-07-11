@@ -17,11 +17,13 @@ const saludo= ()=>{
 // a la hora de renderizar este se llamara una unica vez y no dos veces
 // en el caso de que este dentro del componente.
 
-export const FirstApp = () =>{
+export const FirstApp = ({ elemento, elemento2}) =>{
 
     return (
         <>hola
             {saludo()}
+            Este es el primer elemento : {elemento}
+            Este es el segundo elemento : {elemento2}
             <h1>Soy subtitulo</h1>
         </>
     );
