@@ -19,7 +19,13 @@ const saludo= ()=>{
 // a la hora de renderizar este se llamara una unica vez y no dos veces
 // en el caso de que este dentro del componente.
 
-export const FirstApp = ({ title, author, anio}) =>{
+export const FirstApp = ({
+    
+    title,
+    author,
+    anio
+
+}) =>{
 
     return (
         <>hola
@@ -33,9 +39,16 @@ export const FirstApp = ({ title, author, anio}) =>{
     );
 }
 
+//Los default Props entran antes que los propTypes
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string,
     anio :PropTypes.number
+}
+
+FirstApp.defaultProps = {
+     title: 'No hay titulo',
+     author: 'Arturo',
+     anio: 0
 }
